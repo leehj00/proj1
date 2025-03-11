@@ -20,16 +20,13 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('/blog', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'blog.html'));
+  res.render('blog');
 });
 
 app.get('/review', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'review.html'));
+  res.render('review');
 });
 
-// app.get('/faq', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'views', 'faq.html'));
-// });
 app.get('/faq', (req, res) => {
   res.render('faq');
 });
