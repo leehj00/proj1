@@ -5,6 +5,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'html');
 app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
@@ -26,8 +27,11 @@ app.get('/review', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'review.html'));
 });
 
+// app.get('/faq', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'views', 'faq.html'));
+// });
 app.get('/faq', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'faq.html'));
+  res.render('faq');
 });
 
 const PORT = process.env.PORT || 3001;
