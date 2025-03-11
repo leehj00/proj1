@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="/main.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="/">HOME</a></li>
+              <li><a href="/about">ABOUT</a></li>
+              <li><a href="/contact">CONTACT</a></li>
+              <li><a href="/blog">BLOG</a></li>
+              <li><a href="/review">REVIEW</a></li>
+              <li><a href="/faq">FAQ</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="/">HOME</a></li>
+              <li><a href="/about">ABOUT</a></li>
+              <li><a href="/contact">CONTACT</a></li>
+              <li><a href="/blog">BLOG</a></li>
+              <li><a href="/review">REVIEW</a></li>
+              <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
+
+      <div class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold text-center text-pink-600 mb-6">Blog</h1><br>
+        <div class="max-w-3xl mx-auto space-y-6">
+            <div class="card bg-white shadow-md rounded-lg p-6">
+                <h2 class="text-2xl font-semibold">The Secret to a Perfect Cake</h2>
+                <p class="text-gray-500 mt-2">Learn the best tips and tricks for baking a delicious and beautiful cake.</p>
+                <label for="modal-1" class="text-blue-500 mt-2 inline-block cursor-pointer">Read more</label>
+            </div>
+            <div class="card bg-white shadow-md rounded-lg p-6">
+                <h2 class="text-2xl font-semibold">Our Favorite Cake Flavors</h2>
+                <p class="text-gray-500 mt-2">Discover the most popular cake flavors that our customers love.</p>
+                <label for="modal-2" class="text-blue-500 mt-2 inline-block cursor-pointer">Read more</label>
+            </div>
+            <div class="card bg-white shadow-md rounded-lg p-6">
+                <h2 class="text-2xl font-semibold">How to Decorate a Cake Like a Pro</h2>
+                <p class="text-gray-500 mt-2">Step-by-step guide to decorating a cake with professional techniques.</p>
+                <label for="modal-3" class="text-blue-500 mt-2 inline-block cursor-pointer">Read more</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <input type="checkbox" id="modal-1" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box">
+            <h2 class="text-2xl font-bold">The Secret to a Perfect Cake</h2><br>
+            <img src="https://images.unsplash.com/photo-1559329373-78f77851b979?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="cake">
+            <p class="py-4">The secret to a perfect cake lies in meticulous detail, including using fresh ingredients at room temperature, precise measurements, properly lined pans, allowing cakes to cool completely before frosting, and a final chill in the fridge. <br><br>
+                Here's a breakdown of key tips for baking a perfect cake:<br>
+                1. Start with Quality Ingredients & Preparation<br>
+                2. Cake Baking Techniques<br>
+                3. Frosting and Decoration
+            </p>
+            <div class="modal-action">
+                <label for="modal-1" class="btn">Close</label>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-2" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box">
+            <h2 class="text-2xl font-bold">Our Favorite Cake Flavors</h2>
+            <p class="py-4">Read more about the most loved cake flavors by our customers.</p>
+            <div class="modal-action">
+                <label for="modal-2" class="btn">Close</label>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-3" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box">
+            <h2 class="text-2xl font-bold">How to Decorate a Cake Like a Pro</h2>
+            <p class="py-4">Learn the best cake decorating techniques used by professionals.</p>
+            <div class="modal-action">
+                <label for="modal-3" class="btn">Close</label>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
