@@ -4,71 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link href="/main.css" rel="stylesheet">
+    <link href="/css/blog.css" rel="stylesheet">
 </head>
 <body>
     <%- include('partials/navbar') %>
 
-    <div class="container mx-auto p-6">
-        <h1 class="text-4xl font-bold text-center text-pink-600 mb-6">Blog</h1><br>
-        <div class="max-w-3xl mx-auto space-y-6">
-            <div class="card bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-2xl font-semibold">The Secret to a Perfect Cake</h2>
-                <p class="text-gray-500 mt-2">Learn the best tips and tricks for baking a delicious and beautiful cake.</p>
-                <label for="modal-1" class="text-blue-500 mt-2 inline-block cursor-pointer">Read more</label>
+    <div class="blog-container">
+        <h1 class="blog-title">Blog</h1><br>
+
+        <div class="blog-list">
+            <div class="blog-item">
+                <h2 class="blog-heading">The Secret to a Perfect Cake</h2>
+                <p class="blog-description">Learn the best tips and tricks for baking a delicious and beautiful cake.</p>
+                <button class="btn-primary" onclick="openModal('modal-1')">Read more</button>
             </div>
-            <div class="card bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-2xl font-semibold">Our Favorite Cake Flavors</h2>
-                <p class="text-gray-500 mt-2">Discover the most popular cake flavors that our customers love.</p>
-                <label for="modal-2" class="text-blue-500 mt-2 inline-block cursor-pointer">Read more</label>
+
+            <div class="blog-item">
+                <h2 class="blog-heading">Our Favorite Cake Flavors</h2>
+                <p class="blog-description">Discover the most popular cake flavors that our customers love.</p>
+                <button class="btn-primary" onclick="openModal('modal-2')">Read more</button>
             </div>
-            <div class="card bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-2xl font-semibold">How to Decorate a Cake Like a Pro</h2>
-                <p class="text-gray-500 mt-2">Step-by-step guide to decorating a cake with professional techniques.</p>
-                <label for="modal-3" class="text-blue-500 mt-2 inline-block cursor-pointer">Read more</label>
+
+            <div class="blog-item">
+                <h2 class="blog-heading">How to Decorate a Cake Like a Pro</h2>
+                <p class="blog-description">Step-by-step guide to decorating a cake with professional techniques.</p>
+                <button class="btn-primary" onclick="openModal('modal-3')">Read more</button>
             </div>
         </div>
     </div>
 
     <!-- Modals -->
-    <input type="checkbox" id="modal-1" class="modal-toggle" />
-    <div class="modal">
+    <div id="modal-1" class="modal">
         <div class="modal-box">
-            <h2 class="text-2xl font-bold">The Secret to a Perfect Cake</h2><br>
-            <img src="https://images.unsplash.com/photo-1559329373-78f77851b979?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="cake">
-            <p class="py-4">The secret to a perfect cake lies in meticulous detail, including using fresh ingredients at room temperature, precise measurements, properly lined pans, allowing cakes to cool completely before frosting, and a final chill in the fridge. <br><br>
+            <h2 class="modal-title">The Secret to a Perfect Cake</h2>
+            <img class="modal-image" src="https://images.unsplash.com/photo-1559329373-78f77851b979?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="cake">
+            <p class="modal-text">The secret to a perfect cake lies in meticulous detail, including using fresh ingredients at room temperature, precise measurements, properly lined pans, allowing cakes to cool completely before frosting, and a final chill in the fridge. <br><br>
                 Here's a breakdown of key tips for baking a perfect cake:<br>
                 1. Start with Quality Ingredients & Preparation<br>
                 2. Cake Baking Techniques<br>
                 3. Frosting and Decoration
             </p>
             <div class="modal-action">
-                <label for="modal-1" class="btn">Close</label>
+                <button class="btn-primary" onclick="closeModal('modal-1')">Close</button>
             </div>
         </div>
     </div>
 
-    <input type="checkbox" id="modal-2" class="modal-toggle" />
-    <div class="modal">
+    <div id="modal-2" class="modal">
         <div class="modal-box">
-            <h2 class="text-2xl font-bold">Our Favorite Cake Flavors</h2>
-            <p class="py-4">Read more about the most loved cake flavors by our customers.</p>
+            <h2 class="modal-title">Our Favorite Cake Flavors</h2>
+            <p class="modal-text">Read more about the most loved cake flavors by our customers.</p>
             <div class="modal-action">
-                <label for="modal-2" class="btn">Close</label>
+                <button class="btn-primary" onclick="closeModal('modal-2')">Close</button>
             </div>
         </div>
     </div>
 
-    <input type="checkbox" id="modal-3" class="modal-toggle" />
-    <div class="modal">
+    <div id="modal-3" class="modal">
         <div class="modal-box">
-            <h2 class="text-2xl font-bold">How to Decorate a Cake Like a Pro</h2>
-            <p class="py-4">Learn the best cake decorating techniques used by professionals.</p>
+            <h2 class="modal-title">How to Decorate a Cake Like a Pro</h2>
+            <p class="modal-text">Learn the best cake decorating techniques used by professionals.</p>
             <div class="modal-action">
-                <label for="modal-3" class="btn">Close</label>
+                <button class="btn-primary" onclick="closeModal('modal-3')">Close</button>
             </div>
         </div>
     </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.add("modal-open");
+        }
+        function closeModal(id) {
+            document.getElementById(id).classList.remove("modal-open");
+        }
+    </script>
 
 </body>
 </html>
