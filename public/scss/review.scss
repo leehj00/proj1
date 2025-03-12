@@ -15,11 +15,11 @@
 }
 
 .review-item {
-    @apply bg-white shadow-md rounded-lg p-4 border border-gray-200;
+    @apply bg-white shadow-md rounded-lg p-4 border border-gray-200 flex items-center; 
 }
 
 .review-text {
-    @apply text-lg font-semibold;
+    @apply text-lg font-semibold ml-4;
 }
 
 .review-author {

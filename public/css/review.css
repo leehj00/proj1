@@ -2073,6 +2073,8 @@ html {
 }
 
 .review-item {
+  display: flex;
+  align-items: center;
   border-radius: 0.5rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -2086,6 +2088,7 @@ html {
 }
 
 .review-text {
+  margin-left: 1rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
