@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review</title>
-    <link href="/main.css" rel="stylesheet">
+    <link href="/css/review.css" rel="stylesheet">
 </head>
 <body>
     <%- include('partials/navbar') %>
 
-      <div class="container mx-auto p-6">
-        <h1 class="text-4xl font-bold text-center text-pink-600 mb-6">Customer Reviews</h1><br>
-        <div class="max-w-3xl mx-auto space-y-4">
-            <div class="card bg-white shadow-md rounded-lg p-6">
-                <p class="text-lg font-semibold">"Amazing cakes! The taste and design were perfect!"</p>
-                <p class="text-gray-500 mt-2">- Emily R.</p>
+    <div class="review-container">
+        <h1 class="review-title">Customer Reviews</h1><br>
+
+        <div class="review-list">
+            <div class="review-item">
+                <p class="review-text">"Amazing cakes! The taste and design were perfect!"</p>
+                <p class="review-author">- Emily R.</p>
             </div>
-            <div class="card bg-white shadow-md rounded-lg p-6">
-                <p class="text-lg font-semibold">"Great customer service and delicious flavors!"</p>
-                <p class="text-gray-500 mt-2">- James K.</p>
+
+            <div class="review-item">
+                <p class="review-text">"Great customer service and delicious flavors!"</p>
+                <p class="review-author">- James K.</p>
             </div>
-            <div class="card bg-white shadow-md rounded-lg p-6">
-                <p class="text-lg font-semibold">"Absolutely loved the vegan cake options. Will order again!"</p>
-                <p class="text-gray-500 mt-2">- Sarah W.</p>
+
+            <div class="review-item">
+                <p class="review-text">"Absolutely loved the vegan cake options. Will order again!"</p>
+                <p class="review-author">- Sarah W.</p>
             </div>
-            <div class="card bg-white shadow-md rounded-lg p-6">
-                <p class="text-lg font-semibold">"Fast delivery and beautifully decorated cakes!"</p>
-                <p class="text-gray-500 mt-2">- Daniel M.</p>
+
+            <div class="review-item">
+                <p class="review-text">"Fast delivery and beautifully decorated cakes!"</p>
+                <p class="review-author">- Daniel M.</p>
             </div>
         </div>
     </div>
