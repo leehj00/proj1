@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node server.js",
     "start": "node server.js",
-    "tw:build": "tailwindcss build -i ./public/styles.css -o ./public/main.css"
+    "tw:build": "tailwindcss build -i ./public/styles.css -o ./public/main.css",
+    "build:css": "npx tailwindcss -i ./public/scss/faq.scss -o ./public/css/faq.css --watch"
   },
   "repository": {
     "type": "git",
