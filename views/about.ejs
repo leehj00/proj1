@@ -9,6 +9,12 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@$5/themes.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+<style>
+    .grid img {
+        height: 165px;
+        width: 165px;
+    }
+</style>
 
 <body class="bg-base-100">
   <%- include('partials/navbar') %>
@@ -47,12 +53,12 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white shadow-lg rounded-lg p-4">
         <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
             <img src="/images/f1.jpg" class="rounded-full w-24 h-24 object-cover" />
-            <p class="mt-4 text-lg font-semibold">Jane Doe - Founder</p>
+            <p class="mt-4 text-lg font-semibold">Sarah Richardson - Founder</p>
             <p class="text-gray-500">Cake Artist & Innovator</p>
         </div>
         <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
             <img src="/images/f2.jpg" class="rounded-full w-24 h-24 object-cover" />
-            <p class="mt-4 text-lg font-semibold">John Smith - Pastry Chef</p>
+            <p class="mt-4 text-lg font-semibold">Samantha Roberts - Pastry Chef</p>
             <p class="text-gray-500">Expert in Flavors</p>
         </div>
     </div>

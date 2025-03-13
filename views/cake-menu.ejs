@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="/main.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@$5/themes.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    .card img {
+        max-height: 280px;
+    }
+  </style>
+</head>
+<body class="bg-base-100">
+  <%- include('partials/navbar') %> 
+  
+  <div class="container mx-auto p-6">
+    <h1 class="text-4xl font-bold text-pink-600 text-center mb-8">🎂 Our Cake Menu</h1>
+    <br><br><br>
+
+    <!-- Cake Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Cake Item -->
+        <div class="card bg-white shadow-lg rounded-lg">
+            <figure><img src="/images/c1.jpg" alt="Chocolate Cake" class="w-full h-48 object-cover"></figure>
+            <div class="card-body">
+                <h3 class="text-xl font-semibold text-gray-800">🍫 Chocolate Cake</h3>
+                <p class="text-gray-600">Rich and creamy chocolate indulgence.</p>
+                <p class="text-pink-600 font-bold">$25.99</p>
+                <button class="btn btn-primary mt-3">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Cake Item -->
+        <div class="card bg-white shadow-lg rounded-lg">
+            <figure><img src="/images/c2.jpg" alt="Vanilla Cake" class="w-full h-48 object-cover"></figure>
+            <div class="card-body">
+                <h3 class="text-xl font-semibold text-gray-800">🍦 Vanilla Cake</h3>
+                <p class="text-gray-600">Classic vanilla with a smooth finish.</p>
+                <p class="text-pink-600 font-bold">$22.99</p>
+                <button class="btn btn-primary mt-3">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Cake Item -->
+        <div class="card bg-white shadow-lg rounded-lg">
+            <figure><img src="/images/c3.jpg" alt="Red Velvet Cake" class="w-full h-48 object-cover"></figure>
+            <div class="card-body">
+                <h3 class="text-xl font-semibold text-gray-800">❤️ Red Velvet Cake</h3>
+                <p class="text-gray-600">Soft red velvet with cream cheese frosting.</p>
+                <p class="text-pink-600 font-bold">$28.99</p>
+                <button class="btn btn-primary mt-3">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Cake Item -->
+        <div class="card bg-white shadow-lg rounded-lg">
+            <figure><img src="/images/c4.jpg" alt="Fruit Cake" class="w-full h-48 object-cover"></figure>
+            <div class="card-body">
+                <h3 class="text-xl font-semibold text-gray-800">🍓 Fruit Cake</h3>
+                <p class="text-gray-600">A delicious mix of fresh fruits.</p>
+                <p class="text-pink-600 font-bold">$30.99</p>
+                <button class="btn btn-primary mt-3">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Cake Item -->
+        <div class="card bg-white shadow-lg rounded-lg">
+            <figure><img src="/images/c5.jpg" alt="Custom Cake" class="w-full h-48 object-cover"></figure>
+            <div class="card-body">
+                <h3 class="text-xl font-semibold text-gray-800">🎨 Custom Cake</h3>
+                <p class="text-gray-600">Design your dream cake, any flavor!</p>
+                <p class="text-pink-600 font-bold">Starting at $35.99</p>
+                <button class="btn btn-primary mt-3">Order Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
