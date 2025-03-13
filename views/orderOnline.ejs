@@ -17,14 +17,17 @@
     </div>
   </div>
 
-  <main class="container mx-auto p-6">
-    <section class="order-info mb-8">
+  <main class="container mx-auto p-6 flex">
+  
+    <section class="w-1/3 mr-6">
+      <img src="/images/tiramisu.jpg" alt="Order Online Image" class="rounded shadow-md">
+    </section>
+    
+    
+    <section class="w-2/3 bg-white p-6 rounded shadow-md">
       <h2 class="text-2xl font-bold mb-4">Place Your Order</h2>
       <p class="mb-6">Order your favorite cakes and pastries online! Fill out the form below to place your order.</p>
-    </section>
-
-    <section class="order-form">
-      <form action="/submitOrder" method="POST" class="bg-white p-6 rounded shadow-md">
+      <form action="/submitOrder" method="POST">
         <div class="mb-4">
           <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
           <input type="text" id="name" name="name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
@@ -49,5 +52,7 @@
       </form>
     </section>
   </main>
+  
+  <%- include('partials/footer') %> 
 </body>
 </html>
