@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/gallery.css">
+</head>
+<body class="bg-gray-100">
+  <%- include('partials/navbar') %>
+
+  <div class="hero min-h-40 bg-gradient-to-r from-pink-400 to-purple-500 text-white flex items-center">
+    <div class="hero-content text-center">
+      <h1 class="text-3xl font-bold">Gallery</h1>
+    </div>
+  </div>
+
+  <main class="container mx-auto p-6">
+    <div class="gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <img src="/images/birthdaycake.jpg" alt="Birthday Cake" class="rounded shadow">
+      <img src="/images/weddingcake.jpg" alt="Wedding Cake" class="rounded shadow">
+      <img src="/images/chocolatecake.jpg" alt="Best Selling Cake" class="rounded shadow">
+      <img src="/images/customcake.jpg" alt="Custom Cake" class="rounded shadow">
+    </div>
+  </main>
+
+  <footer class="p-4 bg-primary text-white text-center">
+    <p>© 2025 Your Name</p>
+  </footer>
+</body>
+</html>

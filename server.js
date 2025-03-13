@@ -35,6 +35,10 @@ app.get('/cake-menu', (req, res) => {
   res.render('cake-menu');
 });
 
+app.get('/gallery', (req, res) => {
+  res.render('gallery');
+});
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
