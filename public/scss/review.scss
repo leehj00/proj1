@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.review-container {
+    @apply max-w-3xl mx-auto p-6;
+}
+
+.review-title {
+    @apply text-4xl font-bold text-center text-pink-600 mb-6;
+}
+
+.review-list {
+    @apply space-y-4;
+}
+
+.review-item {
+    @apply bg-white shadow-md rounded-lg p-4 border border-gray-200 flex items-center; 
+}
+
+.review-text {
+    @apply text-lg font-semibold ml-4;
+}
+
+.review-author {
+    @apply text-gray-500 mt-2 italic;
+}

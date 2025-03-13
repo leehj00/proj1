@@ -1,0 +1,35 @@
+{
+  "name": "lab4-naomythian",
+  "version": "1.0.0",
+  "description": "This is an express application using Tailwind CSS",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js",
+    "tw:build": "tailwindcss build -i ./public/styles.css -o ./public/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "your-repository-url-here"
+  },
+  "keywords": [
+    "web",
+    "html",
+    "css",
+    "node",
+    "express"
+  ],
+  "author": "Sharmin Oomatia",
+  "license": "ISC",
+  "dependencies": {
+    "daisyui": "^2.52.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "sass": "^1.85.1",
+    "tailwindcss": "^3.4.17"
+  }
+}
