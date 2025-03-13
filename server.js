@@ -8,7 +8,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'index.html'));
+  res.render('index');
 });
 
 app.get('/about', (req, res) => {

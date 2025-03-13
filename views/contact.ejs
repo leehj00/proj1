@@ -5,23 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <link href="/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css">
+  <script src="https://cdn.tailwindcss.com"></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@$5/themes.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
 </head>
 <body class="bg-base-200">
   <%- include('partials/navbar') %> 
-   <!-- Contact Section -->
-   <div class="container mx-auto p-6">
-    <div class="flex flex-col lg:flex-row bg-white shadow-lg rounded-lg overflow-hidden h-full">
+  <div class="container mx-auto p-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden">
         <!-- Left Image Section -->
-        <div class="lg:w-1/2 w-full">
+        <div class="w-full">
             <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35" alt="Contact Us" class="w-full h-full object-cover">
         </div>
-        
+
         <!-- Right Form Section -->
-        <div class="lg:w-1/2 w-full p-8 flex items-center">
+        <div class="w-full p-8 flex items-center">
             <div class="w-full">
-                <h2 class="text-3xl font-bold text-pink-600 mb-6">Get in Touch</h2>
+                <h1 class="text-3xl font-bold text-pink-600 mb-6">Get in Touch</h1>
                 <p class="text-gray-600 mb-4">We'd love to hear from you! Fill out the form below to place a custom cake order or ask any questions.</p>
                 <form>
                     <div class="mb-4">
