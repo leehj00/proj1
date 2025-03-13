@@ -24,7 +24,7 @@ app.get('/blog', (req, res) => {
 });
 
 app.get('/review', (req, res) => {
-  res.render('review');;
+  res.render('review');
 });
 
 app.get('/faq', (req, res) => {
