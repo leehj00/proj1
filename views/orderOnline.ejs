@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/orderOnline.css">
+</head>
+<body class="bg-gray-100">
+  <%- include('partials/navbar') %>
+
+  <div class="hero min-h-40 bg-gradient-to-r from-green-400 to-blue-500 text-white flex items-center">
+    <div class="hero-content text-center">
+      <h1 class="text-3xl font-bold">Order Online</h1>
+    </div>
+  </div>
+
+  <main class="container mx-auto p-6">
+    <section class="order-info mb-8">
+      <h2 class="text-2xl font-bold mb-4">Place Your Order</h2>
+      <p class="mb-6">Order your favorite cakes and pastries online! Fill out the form below to place your order.</p>
+    </section>
+
+    <section class="order-form">
+      <form action="/submitOrder" method="POST" class="bg-white p-6 rounded shadow-md">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name" name="name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" name="email" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+        </div>
+        <div class="mb-4">
+          <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+          <input type="tel" id="phone" name="phone" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+        </div>
+        <div class="mb-4">
+          <label for="order-details" class="block text-sm font-medium text-gray-700">Order Details</label>
+          <textarea id="order-details" name="orderDetails" rows="4" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="delivery-date" class="block text-sm font-medium text-gray-700">Preferred Delivery Date</label>
+          <input type="date" id="delivery-date" name="deliveryDate" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Submit Order</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
