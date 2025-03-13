@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link href="/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@$5/themes.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-base-200">
+
+<body class="bg-base-100">
   <%- include('partials/navbar') %>
 
   <!-- Small Banner -->
@@ -56,16 +58,41 @@
     </div>
     
     
-    <!-- Contact Us -->
-    <div class="card bg-pink-100 shadow-lg p-6">
-        <h2 class="text-2xl font-semibold text-pink-700">Contact Us</h2>
-        <p class="text-gray-600 mt-2">Have questions? Reach out to us!</p>
-        <div class="mt-4">
-            <label class="block text-gray-700">Email:</label>
-            <input type="email" placeholder="Enter your email" class="input input-bordered w-full mt-1" />
+    <!-- Contact Info Section -->
+<div class="card bg-pink-100 shadow-lg p-6">
+    <h2 class="text-2xl font-semibold text-pink-700 flex items-center gap-2">
+        📞 Contact Us
+    </h2>
+    <p class="text-gray-600 mt-2">We'd love to hear from you! Reach out using the details below.</p>
+
+    <div class="mt-4 space-y-4">
+        <!-- Phone -->
+        <div class="flex items-center gap-3">
+            <span class="text-pink-600 text-xl">📱</span>
+            <p class="text-gray-700 font-medium">+1 (234) 567-890</p>
         </div>
-        <button class="btn btn-primary mt-4">Send Message</button>
+
+        <!-- Email -->
+        <div class="flex items-center gap-3">
+            <span class="text-pink-600 text-xl">📧</span>
+            <p class="text-gray-700 font-medium">info@yourbakery.com</p>
+        </div>
+
+        <!-- Address -->
+        <div class="flex items-center gap-3">
+            <span class="text-pink-600 text-xl">📍</span>
+            <p class="text-gray-700 font-medium">123 Sweet Street, Cupcake City, CA</p>
+        </div>
     </div>
+
+    <!-- Social Links -->
+    <div class="mt-6 flex gap-4">
+        <a href="#" class="text-pink-600 text-2xl">🌐</a> <!-- Website Icon -->
+        <a href="#" class="text-pink-600 text-2xl">📘</a> <!-- Facebook Icon -->
+        <a href="#" class="text-pink-600 text-2xl">📷</a> <!-- Instagram Icon -->
+    </div>
+</div>
+
 </div>
 
 
