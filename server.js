@@ -43,6 +43,10 @@ app.get('/customCake', (req, res) => {
   res.render('customCake');
 });
 
+app.get('/orderOnline', (req, res) => {
+  res.render('orderOnline');
+});
+
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
