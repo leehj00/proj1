@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link href="/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-base-200">
+  <%- include('partials/navbar') %>
+
+  <!-- Small Banner -->
+  <div class="hero min-h-40 bg-gradient-to-r from-pink-400 to-purple-500 text-white flex items-center">
+    <div class="hero-content text-center">
+        <h1 class="text-3xl font-bold">About Us</h1>
+    </div>
+</div>
+
+<!-- About Sections -->
+<div class="container mx-auto p-6 space-y-10">
+    <!-- Our Story -->
+    <div class="card bg-white shadow-lg p-6">
+        <h2 class="text-2xl font-semibold text-pink-600">Our Story</h2>
+        <p class="text-gray-600 mt-2">We started our journey with a passion for baking and a dream to share delicious cakes with the world. What began as a small home bakery has now turned into a beloved brand.</p>
+    </div>
+    
+    <!-- Our Values -->
+    <div class="collapse collapse-arrow border border-gray-300 bg-white shadow-md">
+        <input type="checkbox" />
+        <div class="collapse-title text-xl font-semibold text-purple-600">
+            Our Values
+        </div>
+        <div class="collapse-content text-gray-600">
+            <ul class="list-disc pl-5">
+                <li>Quality Ingredients</li>
+                <li>Customer Satisfaction</li>
+                <li>Creativity & Innovation</li>
+                <li>Community Engagement</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Meet the Team -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white shadow-lg rounded-lg p-4">
+        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
+            <img src="/images/f1.jpg" class="rounded-full w-24 h-24 object-cover" />
+            <p class="mt-4 text-lg font-semibold">Jane Doe - Founder</p>
+            <p class="text-gray-500">Cake Artist & Innovator</p>
+        </div>
+        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
+            <img src="/images/f2.jpg" class="rounded-full w-24 h-24 object-cover" />
+            <p class="mt-4 text-lg font-semibold">John Smith - Pastry Chef</p>
+            <p class="text-gray-500">Expert in Flavors</p>
+        </div>
+    </div>
+    
+    
+    <!-- Contact Us -->
+    <div class="card bg-pink-100 shadow-lg p-6">
+        <h2 class="text-2xl font-semibold text-pink-700">Contact Us</h2>
+        <p class="text-gray-600 mt-2">Have questions? Reach out to us!</p>
+        <div class="mt-4">
+            <label class="block text-gray-700">Email:</label>
+            <input type="email" placeholder="Enter your email" class="input input-bordered w-full mt-1" />
+        </div>
+        <button class="btn btn-primary mt-4">Send Message</button>
+    </div>
+</div>
+
+
+<!-- 
+  <div class="hero min-h-screen bg-base-200">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img src="https://v3.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+      <div>
+        <h1 class="text-5xl font-bold">Box Office News!</h1>
+        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+</body>
+</html>
